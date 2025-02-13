@@ -201,6 +201,19 @@ a:hover{
     transition-duration: 1.5s;
 }
 
+.hero-image {
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.hero-image img {
+    width: 100%;
+    
+}
+
 @media (max-width: 768px) {
     .hero {
         height: auto;
@@ -433,6 +446,7 @@ a:hover{
     text-align: center;
     padding: 40px 20px;
     background: #f8f8f8;
+    margin-bottom: 2rem;
 }
 
 .cards-section__title {
