@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
+    <script src="assets/js/animations.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Seccion menu -->
+    <header class="header">
+        <nav class="header__nav">
+            <img class="header__logo" src="/Landing-page/assets/img/Logo_programa.png">
+
+            <button class="header__toggle" aria-label="Toggle Menu">
+                <span class="header__toggle-icon"></span>
+                <span class="header__toggle-icon"></span>
+                <span class="header__toggle-icon"></span>
+            </button>
+
+            <ul class="header__menu">
+                <li class="header__item"><a href="#about" class="header__link" data-scroll="Beneficio">Beneficios</a></li>
+                <li class="header__item"><a href="#services" class="header__link" data-scroll="Nosotros">Acerca de nosotros</a></li>
+                <li class="header__item"><a href="#contact" class="header__link" data-scroll="Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seccion de hero  -->
+    <section class="hero" id="Inicio">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h2 class="hero__title animate__animated animate__pulse"> <span style="color: #FF8500; font-weight: bold;">Partners Q10:</span> Transformando la Educación y la Gestión Empresarial con Tecnología </h2>
+                <p class="hero__description">Diseñamos soluciones tecnológicas que revolucionan el futuro de la educación, impulsando una cultura de innovación y un servicio excepcional que garantizan el bienestar de nuestros colaboradores y clientes.</p>
+                <a href="#contact" class="button button--primary">
+                    <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
+                        </path>
+                    </svg> Contáctanos
+                </a>
+            </div>
+            <div class="hero__image animated-container">
+                <img class="animate__animated animate__fadeInRight" src="assets/img/hero_section_phone.png" alt="Phone">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards de beneficios de Partner 10 -->
+    <section class="cards-section" id="Beneficio">
+        <h2 class="cards-section__title">Impulsa tu crecimiento: beneficios exclusivos de ser <span style="color: #FF8500; font-weight: bold;">Partner de Q10</span></h2>
+        <div class="cards-container hidden animate__animated" id="cards-partner">
+            <div class="card">
+                <img src="assets/img/Icono_crecimiento.png" alt="Beneficio 1" class="card-icon">
+                <h3 class="card__title">Expansión y Rentabilidad</h3>
+                <p class="card__description">Aumenta tus ingresos y maximiza tus beneficios al llegar a nuevos mercados, clientes y conexiones potenciales.</p>
+            </div>
+            <div class="card">
+                <img src="assets/img/Icono_contactos.png" alt="Beneficio 2" class="card-icon">
+                <h3 class="card__title">Conexiones Estratégicas</h3>
+                <p class="card__description">Amplía tu red profesional y fortalece tus relaciones comerciales al ofrecer soluciones innovadoras en gestión educativa.</p>
+            </div>
+            <div class="card">
+                <img src="assets/img/Icono_respaldo.png" alt="Beneficio 3" class="card-icon">
+                <h3 class="card__title"> Respaldo y Soporte Global</h3>
+                <p class="card__description">Cuenta con el apoyo de una empresa de alcance internacional, con herramientas y recursos diseñados para potenciar tu crecimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action  -->
+    <section class="action-agency">
+        <div class="action-agency__container">
+            <div class="action-agency__content">
+                <h2 class="action-agency__title gradient_text">Conviértete en un Partner y transforma el futuro </h2>
+                <p class="action-agency__description">
+                    Forma parte de una comunidad innovadora y transforma la educación con nosotros. 
+                    Descubre cómo nuestra tecnología puede potenciar tu institución o empresa.
+                </p>
+            </div>
+    
+            <div class="action-agency__images">
+                <div class="action-agency__image action-agency__image--left">
+                    <img src="assets/img/Agency_section_left.jpg" alt="Image 1">
+                    <span class="action-agency__label">Potencialice su gestión comercial</span>
+                </div>
+                <div class="action-agency__image action-agency__image--right">
+                    <img src="assets/img/Agency_section_right.avif" alt="Image 2">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes y reseñas -->
+    <section class="clients">
+        <h3 class="clients__title"><span style="color: #FF8500; font-weight: bold;">Ellos confiaron en nosotros...</span>  ¡Tú puedes ser el próximo!</h3>
+        <div class="clients__container">
+            <div class="clients__logos">
+                <img src="assets/img/Partner_censa.png" alt="Marca 1" class="clients__logo">
+                <img src="assets/img/Partner_ciencias.png" alt="Marca 2" class="clients__logo">
+                <img src="assets/img/Partner_IME.png" alt="Marca 3" class="clients__logo">
+                <img src="assets/img/Partern_PCA.png" alt="Marca 4" class="clients__logo">
+                <img src="assets/img/Partner_ECO.png" alt="Marca 5" class="clients__logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Acerca de nosotros -->
+    <section class="why-choose" id="Nosotros">
+        <h2 class="why-choose__title">Nuestra esencia y razones para escogernos</h2>
+        <div class="why-choose__container">
+            
+            <div class="why-choose__features why-choose__features--left">
+                <div class="feature">
+                    <img src="assets/img/Icono_innovacion.png" alt="Innovación" class="feature__icon">
+                    <div class="feature__content">
+                        <h3 class="feature__title">Innovación</h3>
+                        <p class="feature__text">En las soluciones contribuyentes a instituciones de eduación y empresas.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="assets/img/Icono_talento.png" alt="Talento" class="feature__icon">
+                    <div class="feature__content">
+                        <h3 class="feature__title">Talento y pasión</h3>
+                        <p class="feature__text">Al contar con personas profesionales, jovenes, bondadosos, apasionados y comprometidos.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="assets/img/Icono_resultados.png" alt="Resultados" class="feature__icon">
+                    <div class="feature__content">
+                        <h3 class="feature__title">Resultados</Ri:a></h3>
+                        <p class="feature__text">Más de 3.000 clientes a nivel mundial confían en Q10.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-choose__image">
+                <img src="assets/img/Choose_us_section.png" alt="About us" class="why-choose__image-img">
+            </div>
+
+            <div class="why-choose__features why-choose__features--right">
+                <div class="feature">
+                    <img src="assets/img/Icono_innovacion.png" alt="Icono innovacion" class="feature__icon">
+                    <div class="feature__content">
+                        <h3 class="feature__title">Excelencia</h3>
+                        <p class="feature__text">En las soluciones tecnológicas que transforman el futuro de la educación.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="assets/img/Icono_transformacion.png" alt="Icono transformacion" class="feature__icon">
+                    <div class="feature__content">
+                        <h3 class="feature__title">Transformación</h3>
+                        <p class="feature__text">Al alcance con nuestro software académico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="call-to-action">
+        <div class="call-to-action__content">
+            <h2 class="call-to-action__title">¡Transforma tu negocio hoy! 🚀</h2>
+            <p class="call-to-action__text">Lleva tu empresa al siguiente nivel con nuestras soluciones innovadoras. Únete a cientos de clientes que ya confían en nosotros.</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="Contacto">
+        <div class="contact__container">
+            
+            <div class="contact__form">
+                <h2 class="contact__title">Contáctanos</h2>
+                <p class="contact__description">No dudes en escribirnos, estamos aquí para ayudarte. Te responderemos rápido</p>
+                
+                <form action="" class="contact__form-container">
+                    <input type="text" class="contact__input" placeholder="Nombre">
+                    <input type="email" class="contact__input" placeholder="Correo">
+                    <textarea class="contact__textarea" placeholder="Mensaje"></textarea>
+                    <button type="submit" class="button">Enviar</button>
+                </form>
+            </div>
+
+            
+            <div class="contact__image">
+                <img src="assets/img/Contact_section.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <img src="assets/img/Logo_programa_blanco.png" class="footer_image">
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="" data-scroll="Inicio" class="footer__link" >Inicio</a></li>
+                    <li class="footer__item"><a href="" data-scroll="Nosotros">Quiénes somos</a></li>
+                    <li class="footer__item"><a href="" data-scroll="Beneficio" class="footer__link">Beneficios</a></li>
+                    <li class="footer__item"><a href="" data-scroll="Contacto" class="footer__link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                <a href="" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="footer__icon"><i class="fab fa-twitter"></i></a>
+                <a href="" class="footer__icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 Q10. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
+
